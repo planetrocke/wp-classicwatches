@@ -1,0 +1,146 @@
+.home-page-content{
+	margin: 25px 0;
+	
+	.one-half{
+		@include respond-to(landscape) {
+			width: auto;
+			float: none;
+			margin: 25px 10px;
+		}
+	}
+	
+	img {
+		border: 1px solid $light-gray;
+	}
+	
+}
+
+.breadcrumbs {
+}
+
+.entry-title {
+	overflow: hidden;
+	word-wrap: break-word;
+
+	a {
+		color: inherit;
+
+		&:hover,
+		&:focus,
+		&:active {
+		}
+	}
+}
+
+.entry-content {
+	padding: 0 14px 50px 14px;
+
+	p {
+		@extend %type;
+	}
+
+	ol,
+	ul {
+		@extend %type;
+		overflow: hidden;
+		padding-left: 2.5em;
+
+		ol,
+		ul {
+			margin-bottom: .5em;
+			padding-left: 1.5em;
+		}
+	}
+
+	ol {
+		li {
+			list-style-type: decimal;
+		}
+	}
+
+	ul {
+		li {
+			list-style-type: disc;
+		}
+	}
+
+	blockquote {
+		margin: 0;
+
+		p {
+		}
+	}
+
+	table {
+		margin-bottom: 1.5em;
+	}
+
+	.watch_listing_row{
+		padding: 15px 0px;
+		border-bottom: 1px solid $gray;
+	}	
+	
+	a.watch_listing_link{
+		text-decoration: none;
+		color: $blue;
+	}
+	
+	.watch_page_thumbnail {
+
+	}
+	
+	.watch_page_row_header{
+		padding: 3px 10px;
+		background: $light-gray;
+	}
+	
+	.watch_page_basic_details{
+		font-size: 12px;
+		
+		ul {
+			margin-top: 10px;
+		}
+		
+	}
+	
+	.watch_page_price{
+		font-size: 27px;
+		font-weight: bold;
+	}
+}
+
+.entry-header {
+	margin-bottom: 14px;
+	padding: 14px 14px 0 14px;
+	border-bottom: 1px solid $gray;
+	background: $white;
+	color: $blue;
+}
+
+.more-link {
+	position: relative;
+	white-space: nowrap;
+}
+
+.entry-pagination {
+	@extend %type;
+}
+
+.entry-meta {
+	clear: both;
+
+	.entry-header & {
+	}
+
+	.entry-footer & {
+	}
+
+	.entry-categories,
+	.entry-tags {
+	}
+}
+
+.wp-caption-text{
+	font-size: 11px;
+	font-style: italic;
+}

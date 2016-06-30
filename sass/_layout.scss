@@ -1,0 +1,44 @@
+// Genesis layout <body> classes:
+// .content-sidebar-sidebar
+// .sidebar-content-sidebar
+// .sidebar-sidebar-content
+// .content-sidebar
+// .sidebar-content
+// .full-width-content
+
+body {
+	background-color: $dark_gray;
+}
+
+.site-container {
+}
+
+.site-inner {
+	background-color: $white;
+}
+
+.content-sidebar-wrap {
+	@extend %clearfix;
+}
+
+.content {
+	@include respond-to(portrait) {
+		margin: 0 auto 0;
+		width: auto;
+	}
+	margin: 0 auto 0;
+	width: $site-width;
+	border-right: 1px solid $content_border;
+	border-left: 1px solid $content_border;
+	background: $content_bg;
+}
+
+.sidebar-primary {
+}
+
+.sidebar-secondary {
+}
+
+.clear {
+	clear: both;
+}

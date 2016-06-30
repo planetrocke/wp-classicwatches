@@ -1,0 +1,26 @@
+.site-header {
+	> .wrap {
+	}
+}
+
+.title-area {
+	float: left;
+}
+
+.site-title {
+	a {
+		&:hover,
+		&:focus {
+		}
+	}
+}
+
+.site-description {
+}
+
+.header-widget-area {
+	float: right;
+
+	.widget {
+	}
+}

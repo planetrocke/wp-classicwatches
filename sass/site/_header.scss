@@ -1,0 +1,48 @@
+.site-header {
+	@include respond-to(portrait) {
+		margin: 0 auto 0;
+		text-align: center;
+	}
+	padding: 10px;
+	background: $light-gray;
+
+	> .wrap {
+		@include respond-to(portrait) {
+			margin: auto;
+			width: auto;
+		}
+		margin: 0 auto 0;
+		width: $site_width;
+	}
+}
+
+.title-area {
+	float: left;
+}
+
+.site-title {
+	a {
+		&:hover,
+		&:focus {
+		}
+	}
+}
+
+.site-description {
+}
+
+.header-widget-area {
+	float: right;
+
+	.widget {
+	}
+}
+
+.header-logo {
+	@include respond-to(portrait) {
+		margin: 0 auto 0;
+		width: 120px;
+		text-align: center;
+	}
+	width: 170px;
+}

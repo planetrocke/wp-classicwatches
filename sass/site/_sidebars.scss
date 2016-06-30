@@ -1,0 +1,87 @@
+.sidebar {
+
+	float: right;
+	width: $sidebar-sidebar-width;
+	background: $white;
+	border: 2px solid $light-gray;
+	margin-top: 40px;
+	margin-bottom: 100px;
+
+	@include respond-to(landscape) {
+		float: none;
+		width: auto;
+	}
+
+	.page_item{
+		background: $white;	
+		padding: 7px 7px;	
+		cursor: pointer;
+		border-bottom: 1px solid $light-gray;
+		
+		&:hover{
+			background: $light-gray;
+		}
+
+		a {	
+			color: $black;
+			font-size: 13px;
+			text-decoration: none;
+			width: 100%;
+			display: inline-block;
+
+			@include respond-to(landscape) {
+				text-align: center;
+			}
+		}
+		
+	}
+
+	.current_page_item{
+		background: $navbar;
+		font-weight: bold;
+
+		&:hover{
+			background: $navbar;
+		}
+
+	}
+
+	.widget {
+		word-wrap: break-word;
+	}
+
+	section{
+		padding: 0px;
+	}
+
+	.widgettitle {
+			background: $black;
+			padding: 8px;
+			font-size: 15px;
+			color: $white;
+			text-align: center;
+			text-transform: uppercase;
+			-webkit-margin-before: 0em;
+		    -webkit-margin-after: 0em;
+	}
+
+	.widget_featured_watches{
+	
+		.wrap{
+			padding: 20px;
+		}
+		
+		.featured_watch_row{			
+			border-bottom: 1px solid $medium-gray;
+			padding: 0px 0px 20px 0px;
+			text-align: center;
+			font-size: 11px;
+			margin-bottom: 21px;
+		}
+		
+		.featured_watch_thumbnail{
+			width: $thumbnail_width;
+		}
+	}
+
+}
